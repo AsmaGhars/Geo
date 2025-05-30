@@ -1,0 +1,55 @@
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 10px;
+    height: 350px; 
+    width: 750px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .drop-zone {
+    border: 2px dashed rgb(6, 23, 133);
+    padding: 100px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(6, 23, 133);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(20, 37, 145);
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .loading-indicator {
+    margin-top: 20px;
+  }
+  

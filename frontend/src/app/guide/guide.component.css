@@ -1,0 +1,30 @@
+.guide-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 360px;
+  width: 750px;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  width: 700px;
+  height: 280px;
+  border: 1px solid rgb(6, 23, 133);
+  margin-top: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+

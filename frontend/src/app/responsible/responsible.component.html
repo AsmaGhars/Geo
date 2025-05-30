@@ -1,0 +1,10 @@
+<div class="responsible-box">
+  <p>Enter Responsible Email</p>
+  <div class="responsible-container">
+    <div class="email-box">
+      <input type="email" [(ngModel)]="email" placeholder="Enter email" required>
+    </div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </div>
+  <button (click)="validateInputs()">Send</button>
+</div>

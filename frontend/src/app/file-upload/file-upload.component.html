@@ -1,0 +1,16 @@
+<div class="upload-container">
+  <div class="drop-zone" (drop)="onDrop($event)" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)"
+    (click)="fileInput.click()">
+    <p>Drop your ZIP file here or click to upload</p>
+  </div>
+  <input type="file" #fileInput (change)="onFileChange($event)" style="display: none;" accept=".zip" />
+  <p>{{ uploadMessage }}</p>
+  <div class="button-container">
+    <button (click)="analyze()" [disabled]="isLoading">Analyse</button>
+    <button (click)="cancel()" [disabled]="isLoading">Cancel</button>
+  </div>
+  <div *ngIf="isLoading" class="loading-indicator">
+    <p>Loading...</p>
+  </div>
+</div>
+
