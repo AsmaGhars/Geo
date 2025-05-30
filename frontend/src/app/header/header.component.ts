@@ -11,7 +11,7 @@ export class HeaderComponent {
 
   downloadFiles(): void {
     const files = [
-      { url: 'assets/Règles.pdf', name: 'rules.pdf' },
+      { url: 'assets/Regles.pdf', name: 'rules.pdf' },
       { url: 'assets/Dictionnaire_de_donnees.xlsx', name: 'dictionnaire.xlsx' }
     ];
   
